@@ -1,0 +1,87 @@
+//
+// Prefix header for all source files of the 'VOA' target in the 'VOA' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iPhone SDK 3.0 and later."
+#endif
+
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+    #import <CoreData/CoreData.h>
+#endif
+
+#ifndef DEBUG
+#define NSLog //
+#endif
+
+#define TIME_OUT 20
+
+#define CT_UNKNOWN 0
+#define CT_XML 1
+#define CT_JSON 2
+
+//ARC_TYPE
+#define ARCTYPE_NORMAL 0
+#define ARCTYPE_LEFTTOP 1
+#define ARCTYPE_RIGHTTOP 2
+#define ARCTYPE_RIGHTBOTTOM 4
+#define ARCTYPE_LEFTBOTTOM 8
+
+//DOWNLOAD IMAGE TYPE
+#define IT_PAUSE 0
+#define IT_DOWNLOAD 1
+#define IT_DISCLOSURE 2
+
+//TAB TAG
+#define TT_CATEGORIES 0
+#define TT_VOCABULARY 1
+#define TT_FAVORITES 2
+#define TT_DOWNLOADS 3
+#define TT_SETTINGS 4
+
+typedef enum {
+	NotReachable = 0,
+	ReachableViaWiFi,
+	ReachableViaWWAN
+} NetworkStatus;
+
+#define AD_HEIGHT 0.0
+//#define AD_ID @"a14e04285d63365"
+
+#define ISFORIOS7 1
+
+#define NAVIGATION_BAR_COLOR [UIColor colorWithRed:0.03 green:0.51 blue:1.00 alpha:1.00]
+#define BLUE_TEXT_COLOR [UIColor colorWithRed:0/255.0 green:122/255.0 blue:255/255.0 alpha:1.00]
+
+#define STATUS_BAR_HEIGHT 20.0
+#define NAVIGATION_BAR_HEIGHT 44.0
+#define TAB_BAR_HEIGHT 48.0
+
+#define BASE_URL @"http://www.voa365.com/"
+
+#define RELOAD_ITEM_NOTIFICATION @"RELOAD_ITEM_NOTIFICATION"
+
+//广告ID
+#define AD_ID @"ca-app-pub-1207330468801232/7980776788"
+#define SCREEN_AD_ID @"ca-app-pub-1207330468801232/8120377588"
+#define SCREEN_AD_RATE 2
+
+//UMeng 设置
+#define UMENG_APP_KEY @"5360575556240beac1035c55"
+#define PLAY_EVENT @"play_button"
+#define SCORE_EVENT @"score_button"
+#define RATE_EVENT @"rate_button"
+#define RANK_EVENT @"rank_button"
+#define SHARE_EVENT @"share_button"
+#define FIND_MATCH_EVENT @"match_button"
+#define START_MATCH_EVENT @"start_match"
+#define ADMOD_FAILED_EVENT @"admob_failed"
+#define IAD_FAILED_EVENT @"iad_failed"
+
+//获取协同信息URL
+#define APP_INFO_URL @"http://www.tapguilt.com/api/voa.php"

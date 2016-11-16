@@ -1,0 +1,42 @@
+
+body{
+max-width:document.body.clientWidth - 16px;
+width:expression(this.width > document.body.clientWidth - 16px? (document.body.clientWidth － 16px):this.width);
+font-family:Helvetica;
+font-size:20px;
+word-wrap:break-word;
+
+/** 网页中长按链接不会弹出ActionSheet */
+-webkit-touch-callout:none;
+
+/** 旋转后webview不自动调整字体大小 */
+-webkit-text-size-adjust:none;
+
+} 
+
+.titleDiv{
+max-width:document.body.clientWidth - 16px;
+width:expression(this.width > document.body.clientWidth - 16px? (document.body.clientWidth － 16px):this.width);
+margin-top:6px;
+margin-left:0px;
+font-size:20px;
+font-weight:bold;
+font-family:Helvetica;
+text-transform:capitalize;
+text-overflow:ellipsis; 
+overflow:hidden;
+}
+
+.topImage
+{
+max-width:304px;
+width:expression(this.width > document.body.clientWidth - 16px? (document.body.clientWidth - 16px):this.width);
+}
+
+.dashedLine
+{
+margin-top:6px;
+border-top:1px dashed #cccccc;
+height: 1px;
+overflow:hidden;
+}
