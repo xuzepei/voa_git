@@ -193,12 +193,9 @@
     }
     else
     {
-        CGFloat x = 192.0f;
-        if([RCTool systemVersion] < 7.0)
-            x = 185.0f;
-        
-        _titleLabel.frame = CGRectMake(66, 4, x -offset_width, 20);
-        _progressView.frame = CGRectMake(66,27,x -offset_width,20);
+        CGFloat width = [RCTool getScreenSize].width - 136;
+        _titleLabel.frame = CGRectMake(66, 4, width, 20);
+        _progressView.frame = CGRectMake(66,27,width,20);
         _infoLabel.frame = CGRectMake(66, 35, 200 - offset_width, 20);
     }
 	

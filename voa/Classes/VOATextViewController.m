@@ -372,7 +372,7 @@
         
         if(_rightTimeLabel)
         {
-            _rightTimeLabel.frame = CGRectMake(344, (_toolbar.frame.size.height - 20)/2.0, 40, 20);
+            _rightTimeLabel.frame = CGRectMake([RCTool getScreenSize].width - 150 + 46, (_toolbar.frame.size.height - 20)/2.0, 40, 20);
         }
         
         if(_leftTimeLabel)
@@ -382,7 +382,7 @@
         
         if(_slider)
         {
-            _slider.frame = CGRectMake(40,(_toolbar.frame.size.height - 40)/2.0,300,40);
+            _slider.frame = CGRectMake(40,(_toolbar.frame.size.height - 40)/2.0,[RCTool getScreenSize].width - 150,40);
         }
         
         
@@ -432,7 +432,7 @@
         
         if(_rightTimeLabel)
         {
-            _rightTimeLabel.frame = CGRectMake(220, (_toolbar.frame.size.height - 20)/2.0, 40, 20);
+            _rightTimeLabel.frame = CGRectMake([RCTool getScreenSize].width - 150 + 46, (_toolbar.frame.size.height - 20)/2.0, 40, 20);
         }
         
         if(_leftTimeLabel)
@@ -442,7 +442,7 @@
         
         if(_slider)
         {
-            _slider.frame = CGRectMake(40,(_toolbar.frame.size.height - 40)/2.0,180,40);
+            _slider.frame = CGRectMake(40,(_toolbar.frame.size.height - 40)/2.0,[RCTool getScreenSize].width - 150,40);
         }
         
         if(_imageDisplayView)
@@ -566,7 +566,7 @@
         if(nil == _slider)
         {
             _slider = [[UISlider alloc] initWithFrame:CGRectMake(40,(_toolbar.frame.size.height - 40)/2.0,180,40)];
-            [_slider setThumbImage:[UIImage imageNamed:@"handle"] forState:UIControlStateNormal];
+//            [_slider setThumbImage:[UIImage imageNamed:@"handle"] forState:UIControlStateNormal];
         }
 		[_toolbar addSubview: _slider];
 		
@@ -1428,7 +1428,7 @@
     if(adView)
     {
         CGRect rect =  adView.frame;
-        rect.origin.y = self.view.frame.size.height - 44 - rect.size.height;
+        rect.origin.y = [RCTool getScreenSize].height - 44 - rect.size.height;
         adView.frame = rect;
         [self.view addSubview:adView];
         //[self.view addSubview:adView];

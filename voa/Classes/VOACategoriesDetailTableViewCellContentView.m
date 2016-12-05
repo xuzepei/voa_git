@@ -102,7 +102,7 @@
 	if(hasImage)
 	{
         offset_y = 6.0;
-		max_with = self.bounds.size.width - (offset_x + 10);
+		max_with = self.bounds.size.width - (offset_x + 20);
 	}
 	
 	if([title length])

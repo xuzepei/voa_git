@@ -51,7 +51,6 @@ typedef enum {
 } NetworkStatus;
 
 #define AD_HEIGHT 0.0
-#define AD_ID @"a14e04285d63365"
 
 #define ISFORIOS7 1
 
@@ -69,7 +68,7 @@ typedef enum {
 
 #define APP_NAME [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"]
 #define APP_VERSION [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
-#define APP_URL @"http://itunes.apple.com/app/id1011130848"
+#define APP_URL @"https://itunes.apple.com/app/id446321077"
 
 //In-app Purchase
 #define REMOVE_AD_ID @"201506061"
@@ -81,10 +80,10 @@ typedef enum {
 //广告ID
 #define AD_ID @"ca-app-pub-1207330468801232/7980776788"
 #define SCREEN_AD_ID @"ca-app-pub-1207330468801232/6540627986"
-#define SCREEN_AD_RATE 10
+#define SCREEN_AD_RATE 5
 
 //获取协同信息URL
-#define APP_INFO_URL @"http://www.tapguilt.com/api/voa.php"
+#define APP_INFO_URL @""
 #define URL_0 @""
 #define URL_1 @""
 #define URL_2 @""

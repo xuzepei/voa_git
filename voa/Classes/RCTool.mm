@@ -1039,55 +1039,55 @@ static int g_reachabilityType = -1;
 
 + (NSString*)getAdId
 {
-    NSDictionary* app_info = [[NSUserDefaults standardUserDefaults] objectForKey:@"app_info"];
-    if(app_info && [app_info isKindOfClass:[NSDictionary class]])
-    {
-        NSString* ad_id = [app_info objectForKey:@"ad_id"];
-        if([ad_id length])
-            return ad_id;
-    }
+//    NSDictionary* app_info = [[NSUserDefaults standardUserDefaults] objectForKey:@"app_info"];
+//    if(app_info && [app_info isKindOfClass:[NSDictionary class]])
+//    {
+//        NSString* ad_id = [app_info objectForKey:@"ad_id"];
+//        if([ad_id length])
+//            return ad_id;
+//    }
     
     return AD_ID;
 }
 
 + (NSString*)getScreenAdId
 {
-    NSDictionary* app_info = [[NSUserDefaults standardUserDefaults] objectForKey:@"app_info"];
-    if(app_info && [app_info isKindOfClass:[NSDictionary class]])
-    {
-        NSString* ad_id = [app_info objectForKey:@"mediation_id"];
-        if(0 == [ad_id length])
-            ad_id = [app_info objectForKey:@"screen_ad_id"];
-        
-        if([ad_id length])
-            return ad_id;
-    }
+//    NSDictionary* app_info = [[NSUserDefaults standardUserDefaults] objectForKey:@"app_info"];
+//    if(app_info && [app_info isKindOfClass:[NSDictionary class]])
+//    {
+//        NSString* ad_id = [app_info objectForKey:@"mediation_id"];
+//        if(0 == [ad_id length])
+//            ad_id = [app_info objectForKey:@"screen_ad_id"];
+//        
+//        if([ad_id length])
+//            return ad_id;
+//    }
     
     return SCREEN_AD_ID;
 }
 
 + (int)getScreenAdRate
 {
-    NSDictionary* app_info = [[NSUserDefaults standardUserDefaults] objectForKey:@"app_info"];
-    if(app_info && [app_info isKindOfClass:[NSDictionary class]])
-    {
-        NSString* ad_rate = [app_info objectForKey:@"screen_ad_rate"];
-        if([ad_rate intValue] > 0)
-            return [ad_rate intValue];
-    }
+//    NSDictionary* app_info = [[NSUserDefaults standardUserDefaults] objectForKey:@"app_info"];
+//    if(app_info && [app_info isKindOfClass:[NSDictionary class]])
+//    {
+//        NSString* ad_rate = [app_info objectForKey:@"screen_ad_rate"];
+//        if([ad_rate intValue] > 0)
+//            return [ad_rate intValue];
+//    }
     
     return SCREEN_AD_RATE;
 }
 
 + (NSString*)getAppURL
 {
-    NSDictionary* app_info = [[NSUserDefaults standardUserDefaults] objectForKey:@"app_info"];
-    if(app_info && [app_info isKindOfClass:[NSDictionary class]])
-    {
-        NSString* link = [app_info objectForKey:@"link"];
-        if([link length])
-            return link;
-    }
+//    NSDictionary* app_info = [[NSUserDefaults standardUserDefaults] objectForKey:@"app_info"];
+//    if(app_info && [app_info isKindOfClass:[NSDictionary class]])
+//    {
+//        NSString* link = [app_info objectForKey:@"link"];
+//        if([link length])
+//            return link;
+//    }
     
     return APP_URL;
 }

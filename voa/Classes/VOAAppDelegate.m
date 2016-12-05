@@ -53,6 +53,8 @@
 #pragma mark Application lifecycle
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    [GADMobileAds configureWithApplicationID:[RCTool getAdId]];
 
     UIApplication* app = [UIApplication sharedApplication];
 	app.applicationIconBadgeNumber = 0;
@@ -180,7 +182,8 @@
 	}
     
     self.showFullScreenAd = YES;
-    [self getAppInfo];
+    [self getAD];
+    [self rate];
 	
 }
 
@@ -616,14 +619,11 @@ didFailToReceiveAdWithError:(GADRequestError *)error
 
 - (void)rate
 {
-    if(NO == [RCTool isOpenAll])
-        return;
-    
     NSString* untiltimes = [[NSUserDefaults standardUserDefaults] objectForKey:@"untiltimes"];
     NSInteger i = [untiltimes integerValue];
     if(i == 20)
     {
-        UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"VOA Special English Review" message:@"If you enjoy using VOA Special English, please give it good rate and review on AppStore. Thanks a lot." delegate:self cancelButtonTitle:nil otherButtonTitles:@"NO",@"OK", nil];
+        UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"VOA English News Player" message:@"If you enjoy using VOA English News Player, please give it good rate and review on AppStore. Thanks a lot." delegate:self cancelButtonTitle:nil otherButtonTitles:@"NO",@"OK", nil];
         alert.tag = RATE_ALERT;
         [alert show];
     }
