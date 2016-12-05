@@ -1,9 +1,0 @@
-测试版本：
-
-1.证书使用：ck_dev.pem
-2.发送地址：ssl://gateway.sandbox.push.apple.com:2195
-
-上线后的版本：
-
-1.证书使用：ck_pro.pem
-2.发送地址：ssl://gateway.push.apple.com:2195
