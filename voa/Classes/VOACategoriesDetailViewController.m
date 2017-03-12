@@ -298,6 +298,8 @@ NSComparisonResult dateSort(Item *s1, Item *s2, void *context)
 	Item* item = (Item*)[self getCellDataAtIndexPath: indexPath];
 	if(item)
 	{
+        //[RCTool showInterstitialAd];
+        
 		VOATextViewController* temp = [[[VOATextViewController alloc] 
 													initWithNibName:@"VOATextViewController" 
 													bundle:nil] autorelease];

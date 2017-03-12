@@ -95,7 +95,7 @@
 
 + (CGRect)getScreenRect;
 
-+ (BOOL)isIphone5;
++ (BOOL)isIpad;
 
 + (CGFloat)systemVersion;
 

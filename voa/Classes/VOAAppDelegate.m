@@ -54,7 +54,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    [GADMobileAds configureWithApplicationID:[RCTool getAdId]];
+    [GADMobileAds configureWithApplicationID:APP_ID];
 
     UIApplication* app = [UIApplication sharedApplication];
 	app.applicationIconBadgeNumber = 0;
@@ -400,7 +400,15 @@
         _adMobAd = nil;
     }
     
-    _adMobAd = [[GADBannerView alloc] initWithAdSize:kGADAdSizeSmartBannerPortrait];
+    if([RCTool isIpad])
+    {
+        _adMobAd = [[GADBannerView alloc] initWithAdSize:kGADAdSizeLeaderboard];
+    }
+    else
+    {
+        _adMobAd = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner];
+    }
+    
     _adMobAd.adUnitID = [RCTool getAdId];
     _adMobAd.delegate = self;
     _adMobAd.alpha = 0.0;
@@ -623,7 +631,7 @@ didFailToReceiveAdWithError:(GADRequestError *)error
     NSInteger i = [untiltimes integerValue];
     if(i == 20)
     {
-        UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"VOA English News Player" message:@"If you enjoy using VOA English News Player, please give it good rate and review on AppStore. Thanks a lot." delegate:self cancelButtonTitle:nil otherButtonTitles:@"NO",@"OK", nil];
+        UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"VOA Speical English Learning" message:@"If you enjoy using VOA Speical English Learning, please give it good rate and review on AppStore. Thanks a lot." delegate:self cancelButtonTitle:nil otherButtonTitles:@"NO",@"OK", nil];
         alert.tag = RATE_ALERT;
         [alert show];
     }

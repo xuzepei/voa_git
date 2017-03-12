@@ -927,6 +927,7 @@
 					"$(PROJECT_DIR)/AdMob",
 				);
 				OTHER_LDFLAGS = "-Objc";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tapguilt.voa;
 				PRODUCT_NAME = VOA;
 				PROVISIONING_PROFILE = "315ac944-7a48-4cd9-8f76-32144e7685a8";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "bfd00646-f5b8-4772-a1b4-8457c7855d1d";
@@ -968,6 +969,7 @@
 					"$(PROJECT_DIR)/AdMob",
 				);
 				OTHER_LDFLAGS = "-Objc";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tapguilt.voa;
 				PRODUCT_NAME = VOA;
 				PROVISIONING_PROFILE = "315ac944-7a48-4cd9-8f76-32144e7685a8";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -1006,6 +1008,7 @@
 					"$(PROJECT_DIR)/AdMob",
 				);
 				OTHER_LDFLAGS = "-Objc";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tapguilt.voa;
 				PRODUCT_NAME = VOA;
 				PROVISIONING_PROFILE = "315ac944-7a48-4cd9-8f76-32144e7685a8";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "bfd00646-f5b8-4772-a1b4-8457c7855d1d";

@@ -1008,18 +1008,14 @@ static int g_reachabilityType = -1;
     return [[UIScreen mainScreen] bounds];
 }
 
-+ (BOOL)isIphone5
++ (BOOL)isIpad
 {
     if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
     {
-        CGSize size = [[UIScreen mainScreen] bounds].size;
-        if(568 == size.height)
-        {
-            return YES;
-        }
+        return NO;
     }
     
-    return NO;
+    return YES;
 }
 
 + (CGFloat)systemVersion
@@ -1031,8 +1027,8 @@ static int g_reachabilityType = -1;
 
 + (void)showInterstitialAd
 {
-//    VOAAppDelegate* appDelegate =(VOAAppDelegate*)[UIApplication sharedApplication].delegate;
-//    [appDelegate showInterstitialAd];
+    VOAAppDelegate* appDelegate =(VOAAppDelegate*)[UIApplication sharedApplication].delegate;
+    [appDelegate getAdInterstitial];
 }
 
 #pragma mark - App Info

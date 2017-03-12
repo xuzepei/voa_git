@@ -68,7 +68,7 @@ typedef enum {
 
 #define APP_NAME [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"]
 #define APP_VERSION [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
-#define APP_URL @"https://itunes.apple.com/app/id446321077"
+#define APP_URL @"https://itunes.apple.com/app/id871038968"
 
 //In-app Purchase
 #define REMOVE_AD_ID @"201506061"
@@ -78,8 +78,9 @@ typedef enum {
 #define SHOW_FULLSCREENAD_NOTIFICATION @"SHOW_FULLSCREENAD_NOTIFICATION"
 
 //广告ID
-#define AD_ID @"ca-app-pub-1207330468801232/7980776788"
-#define SCREEN_AD_ID @"ca-app-pub-1207330468801232/6540627986"
+#define APP_ID @"ca-app-pub-1207330468801232~2771847986"
+#define AD_ID @"ca-app-pub-1207330468801232/8120377588"
+#define SCREEN_AD_ID @"ca-app-pub-1207330468801232/7027550788"
 #define SCREEN_AD_RATE 5
 
 //获取协同信息URL
